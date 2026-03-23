@@ -1766,747 +1766,766 @@
   </style>
 </head>
 <body>
-  <div class="site-orbs" aria-hidden="true">
-    <span class="orb orb--1"></span>
-    <span class="orb orb--2"></span>
-    <span class="orb orb--3"></span>
-  </div>
+  <div class="site-shell">
+    <div class="lux-bg lux-bg--one" aria-hidden="true"></div>
+    <div class="lux-bg lux-bg--two" aria-hidden="true"></div>
+    <div class="lux-bg lux-bg--three" aria-hidden="true"></div>
 
-  <div class="topbar">
-    <div class="container topbar__inner">
-      <p>
-        <i class="fa-solid fa-tags"></i>
-        25% off your first order online
-      </p>
-      <div class="topbar__meta">
-        <span><i class="fa-solid fa-pizza-slice"></i> Pizza, burgers, shawarma & more</span>
-        <span><i class="fa-solid fa-mobile-screen-button"></i> App-ready ordering</span>
-        <span><i class="fa-solid fa-motorcycle"></i> Delivery available</span>
+    <div class="topbar">
+      <div class="container topbar__inner">
+        <p>Fresh meals, fast service, and easy ordering</p>
+        <div class="topbar__items">
+          <span><i class="fa-solid fa-bag-shopping"></i> Pickup and delivery available</span>
+          <span><i class="fa-solid fa-phone"></i> Call to order: +233 XX XXX XXXX</span>
+        </div>
       </div>
     </div>
-  </div>
 
-  <header class="site-header" id="top">
-    <div class="container site-header__inner">
-      <a href="#top" class="brand" aria-label="Basilissa home">
-        <div class="brand__badge">B</div>
-        <div class="brand__text">
-          <strong>Basilissa</strong>
-          <span>Family Restaurant</span>
-        </div>
-      </a>
+    <header class="site-header" id="top">
+      <div class="container header__inner">
+        <a href="#home" class="brand" aria-label="Basilissa home">
+          <span class="brand__crest brand__crest--logo">
+            <span class="brand__crest-ring"></span>
+            <img src="logo.jpg" alt="Basilissa logo">
+          </span>
 
-      <nav class="nav" aria-label="Main navigation">
-        <a href="#hero">Home</a>
-        <a href="#menu">Menu</a>
-        <a href="#combos">Combos</a>
-        <a href="#story">Why Basilissa</a>
-        <a href="#gallery">Gallery</a>
-      </nav>
-
-      <div class="header-actions">
-        <button class="icon-btn js-open-cart" type="button" aria-label="Cart">
-          <i class="fa-solid fa-bag-shopping"></i>
-          <span class="cart-count js-cart-count">0</span>
-        </button>
-
-        <a href="#menu" class="btn btn--primary">
-          <i class="fa-solid fa-basket-shopping"></i>
-          Order Now
+          <span class="brand__text">
+            <strong>Basilissa</strong>
+            <small>Restaurant & Fast Food</small>
+          </span>
         </a>
 
-        <button class="menu-toggle js-open-menu" type="button" aria-label="Open menu">
-          <i class="fa-solid fa-bars-staggered"></i>
-        </button>
-      </div>
-    </div>
-  </header>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#home">Home</a>
+          <a href="#menu">Menu</a>
+          <a href="#why-basilissa">Why Basilissa</a>
+          <a href="#combos">Combos</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#contact">Contact</a>
+        </nav>
 
-  <aside class="mobile-drawer" aria-hidden="true">
-    <div class="mobile-drawer__head">
-      <div class="brand">
-        <div class="brand__badge">B</div>
-        <div class="brand__text">
-          <strong>Basilissa</strong>
-          <span>Family Restaurant</span>
+        <div class="header__actions">
+          <a href="#menu" class="btn btn--ghost">
+            <i class="fa-solid fa-book-open"></i>
+            <span>View Menu</span>
+          </a>
+
+          <a href="https://wa.me/233000000000" class="btn btn--primary" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>Order on WhatsApp</span>
+          </a>
+
+          <button class="icon-btn cart-toggle" type="button" aria-label="Open cart" data-cart-toggle>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-count">0</span>
+          </button>
+
+          <button class="nav-toggle" type="button" aria-label="Open navigation" data-nav-toggle>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
       </div>
-      <button class="icon-btn js-close-menu" type="button" aria-label="Close menu">
-        <i class="fa-solid fa-xmark"></i>
-      </button>
-    </div>
+    </header>
 
-    <nav class="mobile-nav" aria-label="Mobile navigation">
-      <a href="#hero">Home</a>
-      <a href="#menu">Menu</a>
-      <a href="#combos">Combos</a>
-      <a href="#story">Why Basilissa</a>
-      <a href="#gallery">Gallery</a>
-    </nav>
+    <aside class="mobile-drawer" aria-hidden="true">
+      <div class="mobile-drawer__inner">
+        <div class="mobile-drawer__top">
+          <div class="brand brand--drawer">
+            <span class="brand__crest brand__crest--logo">
+              <span class="brand__crest-ring"></span>
+              <img src="logo.jpg" alt="Basilissa logo">
+            </span>
+            <span class="brand__text">
+              <strong>Basilissa</strong>
+              <small>Restaurant & Fast Food</small>
+            </span>
+          </div>
 
-    <div class="mobile-drawer__footer">
-      <button class="btn btn--primary btn--block js-open-cart" type="button">
-        <i class="fa-solid fa-bag-shopping"></i>
-        Open Cart
-      </button>
-    </div>
-  </aside>
+          <button class="icon-btn" type="button" aria-label="Close navigation" data-nav-close>
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
 
-  <main>
-    <section class="hero" id="hero" aria-label="Hero">
+        <nav class="mobile-nav" aria-label="Mobile navigation">
+          <a href="#home">Home</a>
+          <a href="#menu">Menu</a>
+          <a href="#why-basilissa">Why Basilissa</a>
+          <a href="#combos">Combos</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="mobile-drawer__actions">
+          <a href="#menu" class="btn btn--ghost btn--block">
+            <i class="fa-solid fa-book-open"></i>
+            <span>View Menu</span>
+          </a>
+          <a href="https://wa.me/233000000000" class="btn btn--primary btn--block" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>Order on WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </aside>
+
+    <section class="hero" id="home" aria-label="Basilissa hero">
       <div class="hero__bg">
-        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=1600&q=80" alt="Fast food hero background">
+        <img src="hero.jpg" alt="Basilissa meals displayed beautifully">
+        <div class="hero__overlay"></div>
       </div>
 
-      <div class="container hero__grid">
-        <div class="hero__content reveal">
-          <p class="eyebrow">
-            <i class="fa-solid fa-utensils"></i>
-            Fast food, done with confidence
-          </p>
+      <div class="container hero__content">
+        <div class="hero__copy">
+          <p class="eyebrow">Fresh meals, fast service</p>
 
-          <h1>
-            Big flavour.
-            <span>Fast service.</span>
-            Better-looking food online.
-          </h1>
+          <h1>Delicious meals, freshly prepared and served fast</h1>
 
           <p class="hero__lead">
-            Pizza, burgers, shawarma, crispy chicken, fresh juices, combos, and everyday meals
-            presented the way a real restaurant brand should feel — warm, polished, and easy to order from.
+            Enjoy pizza, burgers, shawarma, crispy chicken, fried rice, fresh juices and more —
+            all prepared with care and ready for pickup or delivery.
           </p>
 
           <div class="hero__actions">
             <a href="#menu" class="btn btn--primary">
-              <i class="fa-solid fa-book-open"></i>
-              Explore Menu
+              <i class="fa-solid fa-utensils"></i>
+              <span>View Menu</span>
             </a>
-            <button class="btn btn--ghost js-open-cart" type="button">
-              <i class="fa-solid fa-bag-shopping"></i>
-              View Cart
-            </button>
+
+            <a href="https://wa.me/233000000000" class="btn btn--ghost" target="_blank" rel="noopener">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>Order Now</span>
+            </a>
           </div>
 
-          <div class="hero__mini-grid">
-            <article class="mini-card">
-              <i class="fa-solid fa-percent"></i>
-              <strong>First-order deal</strong>
-              <span>Built around online promo energy.</span>
+          <div class="hero__meta">
+            <article class="hero-chip">
+              <i class="fa-solid fa-bowl-food"></i>
+              <div>
+                <strong>Freshly prepared meals</strong>
+                <span>Made with care and served hot every day</span>
+              </div>
             </article>
-            <article class="mini-card">
-              <i class="fa-solid fa-mobile-screen-button"></i>
-              <strong>Delivery ready</strong>
-              <span>Fast ordering flow for phones.</span>
+
+            <article class="hero-chip">
+              <i class="fa-solid fa-motorcycle"></i>
+              <div>
+                <strong>Fast and easy ordering</strong>
+                <span>Pickup and delivery available</span>
+              </div>
             </article>
-            <article class="mini-card">
-              <i class="fa-solid fa-fire"></i>
-              <strong>Everyday cravings</strong>
-              <span>Made for repeat orders, not just browsing.</span>
+
+            <article class="hero-chip">
+              <i class="fa-solid fa-users"></i>
+              <div>
+                <strong>Something for everyone</strong>
+                <span>Meals for quick bites, lunch, and family time</span>
+              </div>
             </article>
           </div>
         </div>
 
-        <div class="hero__visual reveal">
-          <div class="hero-showcase">
-            <div class="hero-showcase__backdrop"></div>
+        <aside class="hero-card">
+          <p class="hero-card__kicker">Welcome to Basilissa</p>
+          <h2>A taste you’ll always come back for</h2>
 
-            <article class="hero-card hero-card--main">
-              <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1200&q=80" alt="Burger and fries">
-              <div class="hero-card__overlay">
-                <span class="tag">House favourite</span>
-                <h2>Food that looks as good as it sells.</h2>
-                <p>Built for hungry scrolls, quick decisions, and easy repeat orders.</p>
-              </div>
-            </article>
+          <p class="hero-card__text">
+            Whether you are stopping by for a quick meal or ordering from home,
+            Basilissa serves great food, quality ingredients, and friendly service you can count on.
+          </p>
 
-            <article class="floating-card floating-card--offer">
-              <span class="floating-card__icon"><i class="fa-solid fa-gift"></i></span>
-              <div>
-                <strong>Online-first offers</strong>
-                <p>Perfect for codes, combo pushes, and limited-time promos.</p>
-              </div>
-            </article>
+          <ul class="hero-card__list">
+            <li>
+              <i class="fa-regular fa-circle-check"></i>
+              <span>Pizza, burgers, shawarma, fried rice and more</span>
+            </li>
+            <li>
+              <i class="fa-regular fa-circle-check"></i>
+              <span>Fresh juices and combo meals available</span>
+            </li>
+            <li>
+              <i class="fa-regular fa-circle-check"></i>
+              <span>Convenient ordering for pickup or delivery</span>
+            </li>
+          </ul>
 
-            <article class="floating-card floating-card--app">
-              <span class="floating-card__icon"><i class="fa-solid fa-motorcycle"></i></span>
-              <div>
-                <strong>Fast order flow</strong>
-                <p>Built to feel smooth on delivery, pickup, and mobile.</p>
-              </div>
-            </article>
-
-            <article class="floating-dish floating-dish--one">
-              <img src="https://images.unsplash.com/photo-1529563021893-cc83c992d75d?auto=format&fit=crop&w=800&q=80" alt="Shawarma">
-            </article>
-
-            <article class="floating-dish floating-dish--two">
-              <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80" alt="Pizza slice">
-            </article>
+          <div class="hero-card__hours">
+            <div>
+              <span>Open Daily</span>
+              <strong>9:00 AM – 10:00 PM</strong>
+            </div>
+            <div>
+              <span>Location</span>
+              <strong>Accra, Ghana</strong>
+            </div>
           </div>
-        </div>
+        </aside>
       </div>
     </section>
 
-    <section class="section-divider" aria-label="Highlights">
-      <div class="container section-divider__grid">
-        <div class="section-divider__item">
-          <i class="fa-solid fa-pizza-slice"></i>
-          <span>Pizza favourites</span>
-        </div>
-        <div class="section-divider__item">
-          <i class="fa-solid fa-burger"></i>
-          <span>Signature burgers</span>
-        </div>
-        <div class="section-divider__item">
-          <i class="fa-solid fa-wheat-awn-circle-exclamation"></i>
-          <span>Loaded shawarma</span>
-        </div>
-        <div class="section-divider__item">
-          <i class="fa-solid fa-drumstick-bite"></i>
-          <span>Crispy chicken</span>
-        </div>
-        <div class="section-divider__item">
-          <i class="fa-solid fa-glass-water"></i>
-          <span>Fresh juices</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="menu" aria-label="Menu">
+    <section class="section highlights">
       <div class="container">
-        <header class="section-head">
-          <p class="eyebrow">
-            <i class="fa-solid fa-layer-group"></i>
-            Best sellers
-          </p>
-          <h2>Food people already come looking for.</h2>
+        <div class="highlights-grid">
+          <article class="highlight-card">
+            <div class="highlight-card__icon">
+              <i class="fa-solid fa-fire-burner"></i>
+            </div>
+            <h3>Freshly prepared meals</h3>
+            <p>Our meals are prepared with care to give you great taste and satisfying portions every time.</p>
+          </article>
+
+          <article class="highlight-card">
+            <div class="highlight-card__icon">
+              <i class="fa-solid fa-stopwatch"></i>
+            </div>
+            <h3>Fast service</h3>
+            <p>We make ordering simple and convenient so you can enjoy your food without long delays.</p>
+          </article>
+
+          <article class="highlight-card">
+            <div class="highlight-card__icon">
+              <i class="fa-solid fa-truck-fast"></i>
+            </div>
+            <h3>Pickup and delivery</h3>
+            <p>Order your favourites for pickup or delivery and enjoy Basilissa wherever you are.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section menu-section" id="menu">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Our Menu</p>
+          <h2>Fresh meals for every appetite</h2>
           <p>
-            A tighter, more food-forward menu section with stronger wording, better spacing,
-            and cards that work beautifully on phones.
+            From pizza and burgers to shawarma, fried rice and fresh juices,
+            Basilissa has something for everyone.
           </p>
-        </header>
+        </div>
 
         <div class="menu-grid">
-          <article class="menu-card reveal" data-id="margherita-pizza" data-name="Margherita Pizza" data-price="180.80" data-image="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=80">
+          <article class="menu-card">
             <div class="menu-card__media">
-              <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=80" alt="Margherita pizza">
-              <span class="badge">Popular</span>
+              <img src="images/margherita.jpg" alt="Margherita Pizza">
+              <span class="tag">Customer favourite</span>
             </div>
             <div class="menu-card__body">
               <div class="menu-card__top">
                 <h3>Margherita Pizza</h3>
-                <strong>GH₵180.80</strong>
+                <strong>GH₵65</strong>
               </div>
-              <p>Classic tomato base, melty mozzarella, and a simple finish that always works.</p>
-              <div class="menu-card__meta">
-                <span><i class="fa-solid fa-fire"></i> Everyday favourite</span>
-                <span><i class="fa-solid fa-users"></i> Great for sharing</span>
-              </div>
-              <div class="menu-card__actions">
-                <button class="btn btn--primary btn--block js-cart-toggle" type="button">Add to Cart</button>
-              </div>
+              <p>Classic tomato sauce, melted mozzarella and a simple, delicious flavour you’ll love.</p>
+              <button class="btn btn--ghost add-to-cart" type="button">Add to Cart</button>
             </div>
           </article>
 
-          <article class="menu-card reveal" data-id="pepperoni-pizza" data-name="Pepperoni Pizza" data-price="203.40" data-image="https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?auto=format&fit=crop&w=900&q=80">
+          <article class="menu-card">
             <div class="menu-card__media">
-              <img src="https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?auto=format&fit=crop&w=900&q=80" alt="Pepperoni pizza">
+              <img src="images/pepperoni.jpg" alt="Pepperoni Pizza">
+              <span class="tag">Popular choice</span>
             </div>
             <div class="menu-card__body">
               <div class="menu-card__top">
                 <h3>Pepperoni Pizza</h3>
-                <strong>GH₵203.40</strong>
+                <strong>GH₵75</strong>
               </div>
-              <p>Bold pepperoni, rich cheese, and the kind of slice customers reorder fast.</p>
-              <div class="menu-card__meta">
-                <span><i class="fa-solid fa-circle-check"></i> Strong seller</span>
-              </div>
-              <div class="menu-card__actions">
-                <button class="btn btn--primary btn--block js-cart-toggle" type="button">Add to Cart</button>
-              </div>
+              <p>Loaded with pepperoni and melted cheese for a rich, satisfying bite.</p>
+              <button class="btn btn--ghost add-to-cart" type="button">Add to Cart</button>
             </div>
           </article>
 
-          <article class="menu-card reveal" data-id="basilissa-special-pizza" data-name="Basilissa Special Pizza" data-price="237.30" data-image="https://images.unsplash.com/photo-1594007654729-407eedc4be65?auto=format&fit=crop&w=900&q=80">
+          <article class="menu-card">
             <div class="menu-card__media">
-              <img src="https://images.unsplash.com/photo-1594007654729-407eedc4be65?auto=format&fit=crop&w=900&q=80" alt="Special pizza">
-              <span class="badge">Signature</span>
+              <img src="images/special-pizza.jpg" alt="Basilissa Special Pizza">
+              <span class="tag">House special</span>
             </div>
             <div class="menu-card__body">
               <div class="menu-card__top">
                 <h3>Basilissa Special Pizza</h3>
-                <strong>GH₵237.30</strong>
+                <strong>GH₵90</strong>
               </div>
-              <p>A fuller, more loaded pizza for customers who want more than the basics.</p>
-              <div class="menu-card__meta">
-                <span><i class="fa-solid fa-star"></i> House special</span>
-              </div>
-              <div class="menu-card__actions">
-                <button class="btn btn--primary btn--block js-cart-toggle" type="button">Add to Cart</button>
-              </div>
+              <p>Our special house pizza, generously topped for a fuller and more satisfying meal.</p>
+              <button class="btn btn--ghost add-to-cart" type="button">Add to Cart</button>
             </div>
           </article>
 
-          <article class="menu-card reveal" data-id="chicken-shawarma" data-name="Chicken Shawarma" data-price="84.80" data-image="https://images.unsplash.com/photo-1645414528451-e1713b74e0f0?auto=format&fit=crop&w=900&q=80">
+          <article class="menu-card">
             <div class="menu-card__media">
-              <img src="https://images.unsplash.com/photo-1645414528451-e1713b74e0f0?auto=format&fit=crop&w=900&q=80" alt="Chicken shawarma">
+              <img src="images/chicken-shawarma.jpg" alt="Chicken Shawarma">
+              <span class="tag">Best seller</span>
             </div>
             <div class="menu-card__body">
               <div class="menu-card__top">
                 <h3>Chicken Shawarma</h3>
-                <strong>GH₵84.80</strong>
+                <strong>GH₵40</strong>
               </div>
-              <p>Seasoned chicken, soft wrap, crisp vegetables, and a creamy finish.</p>
-              <div class="menu-card__meta">
-                <span><i class="fa-solid fa-bolt"></i> Quick craving</span>
-              </div>
-              <div class="menu-card__actions">
-                <button class="btn btn--primary btn--block js-cart-toggle" type="button">Add to Cart</button>
-              </div>
+              <p>Tender seasoned chicken wrapped with fresh vegetables and a creamy sauce.</p>
+              <button class="btn btn--ghost add-to-cart" type="button">Add to Cart</button>
             </div>
           </article>
 
-          <article class="menu-card reveal" data-id="basilissa-special-shawarma" data-name="Basilissa Special Shawarma" data-price="90.40" data-image="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=900&q=80">
+          <article class="menu-card">
             <div class="menu-card__media">
-              <img src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=900&q=80" alt="Special shawarma">
-              <span class="badge">Top pick</span>
+              <img src="images/special-shawarma.jpg" alt="Basilissa Special Shawarma">
+              <span class="tag">Filling meal</span>
             </div>
             <div class="menu-card__body">
               <div class="menu-card__top">
                 <h3>Basilissa Special Shawarma</h3>
-                <strong>GH₵90.40</strong>
+                <strong>GH₵50</strong>
               </div>
-              <p>Loaded, richer, and made for customers who want a fuller bite.</p>
-              <div class="menu-card__meta">
-                <span><i class="fa-solid fa-heart"></i> Repeat favourite</span>
-              </div>
-              <div class="menu-card__actions">
-                <button class="btn btn--primary btn--block js-cart-toggle" type="button">Add to Cart</button>
-              </div>
+              <p>A richer, fuller shawarma packed with flavour and made to satisfy.</p>
+              <button class="btn btn--ghost add-to-cart" type="button">Add to Cart</button>
             </div>
           </article>
 
-          <article class="menu-card reveal" data-id="bbq-single-beef-burger" data-name="BBQ Single Beef Burger" data-price="90.40" data-image="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=80">
+          <article class="menu-card">
             <div class="menu-card__media">
-              <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=80" alt="BBQ beef burger">
+              <img src="images/bbq-burger.jpg" alt="BBQ Single Beef Burger">
+              <span class="tag">Popular choice</span>
             </div>
             <div class="menu-card__body">
               <div class="menu-card__top">
                 <h3>BBQ Single Beef Burger</h3>
-                <strong>GH₵90.40</strong>
+                <strong>GH₵48</strong>
               </div>
-              <p>Juicy beef, smoky BBQ character, and a cleaner burger presentation.</p>
-              <div class="menu-card__meta">
-                <span><i class="fa-solid fa-burger"></i> Burger line</span>
-              </div>
-              <div class="menu-card__actions">
-                <button class="btn btn--primary btn--block js-cart-toggle" type="button">Add to Cart</button>
-              </div>
+              <p>Juicy beef burger with smoky BBQ flavour, served in a soft bun.</p>
+              <button class="btn btn--ghost add-to-cart" type="button">Add to Cart</button>
             </div>
           </article>
 
-          <article class="menu-card reveal" data-id="accra-crispy-chicken-burger" data-name="Accra Crispy Chicken Burger" data-price="96.10" data-image="https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&fit=crop&w=900&q=80">
+          <article class="menu-card">
             <div class="menu-card__media">
-              <img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&fit=crop&w=900&q=80" alt="Crispy chicken burger">
+              <img src="images/crispy-burger.jpg" alt="Accra Crispy Chicken Burger">
+              <span class="tag">Customer favourite</span>
             </div>
             <div class="menu-card__body">
               <div class="menu-card__top">
                 <h3>Accra Crispy Chicken Burger</h3>
-                <strong>GH₵96.10</strong>
+                <strong>GH₵52</strong>
               </div>
-              <p>Crunchy chicken, soft bun, and a simple burger that photographs beautifully.</p>
-              <div class="menu-card__meta">
-                <span><i class="fa-solid fa-drumstick-bite"></i> Crunchy bite</span>
-              </div>
-              <div class="menu-card__actions">
-                <button class="btn btn--primary btn--block js-cart-toggle" type="button">Add to Cart</button>
-              </div>
+              <p>Crispy chicken in a soft bun, made for a crunchy and satisfying bite.</p>
+              <button class="btn btn--ghost add-to-cart" type="button">Add to Cart</button>
             </div>
           </article>
 
-          <article class="menu-card reveal" data-id="double-beef-and-cheese-burger" data-name="Double Beef and Cheese Burger" data-price="124.30" data-image="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=900&q=80">
+          <article class="menu-card">
             <div class="menu-card__media">
-              <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=900&q=80" alt="Double beef burger">
-              <span class="badge">Heavy hitter</span>
+              <img src="images/double-burger.jpg" alt="Double Beef & Cheese Burger">
+              <span class="tag">Bigger meal</span>
             </div>
             <div class="menu-card__body">
               <div class="menu-card__top">
-                <h3>Double Beef & Cheese Burger</h3>
-                <strong>GH₵124.30</strong>
+                <h3>Double Beef &amp; Cheese Burger</h3>
+                <strong>GH₵60</strong>
               </div>
-              <p>Built for bigger appetites and a stronger premium burger tier.</p>
-              <div class="menu-card__meta">
-                <span><i class="fa-solid fa-layer-group"></i> Bigger meal</span>
-              </div>
-              <div class="menu-card__actions">
-                <button class="btn btn--primary btn--block js-cart-toggle" type="button">Add to Cart</button>
-              </div>
+              <p>Double beef and cheese for a bigger, richer burger experience.</p>
+              <button class="btn btn--ghost add-to-cart" type="button">Add to Cart</button>
             </div>
           </article>
 
-          <article class="menu-card reveal" data-id="crispy-chicken" data-name="Crispy Chicken" data-price="84.80" data-image="https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=900&q=80">
+          <article class="menu-card">
             <div class="menu-card__media">
-              <img src="https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=900&q=80" alt="Crispy chicken meal">
+              <img src="images/crispy-chicken.jpg" alt="Crispy Chicken">
+              <span class="tag">Freshly made</span>
             </div>
             <div class="menu-card__body">
               <div class="menu-card__top">
                 <h3>Crispy Chicken</h3>
-                <strong>GH₵84.80</strong>
+                <strong>GH₵55</strong>
               </div>
-              <p>Golden, crunchy, and easy to position as a fast-moving comfort meal.</p>
-              <div class="menu-card__meta">
-                <span><i class="fa-solid fa-fire-flame-curved"></i> Crowd pleaser</span>
-              </div>
-              <div class="menu-card__actions">
-                <button class="btn btn--primary btn--block js-cart-toggle" type="button">Add to Cart</button>
-              </div>
+              <p>Golden, crispy chicken prepared for a tasty and satisfying meal.</p>
+              <button class="btn btn--ghost add-to-cart" type="button">Add to Cart</button>
             </div>
           </article>
 
-          <article class="menu-card reveal" data-id="vegetable-fried-rice" data-name="Vegetable Fried Rice" data-price="96.10" data-image="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=900&q=80">
+          <article class="menu-card">
             <div class="menu-card__media">
-              <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=900&q=80" alt="Vegetable fried rice">
+              <img src="images/vegetable-fried-rice.jpg" alt="Vegetable Fried Rice">
+              <span class="tag">Light option</span>
             </div>
             <div class="menu-card__body">
               <div class="menu-card__top">
                 <h3>Vegetable Fried Rice</h3>
-                <strong>GH₵96.10</strong>
+                <strong>GH₵45</strong>
               </div>
-              <p>A lighter meal option that rounds out the menu nicely for mixed groups.</p>
-              <div class="menu-card__meta">
-                <span><i class="fa-solid fa-seedling"></i> Balanced choice</span>
-              </div>
-              <div class="menu-card__actions">
-                <button class="btn btn--primary btn--block js-cart-toggle" type="button">Add to Cart</button>
-              </div>
+              <p>Freshly prepared fried rice with vegetables, perfect for a light and tasty meal.</p>
+              <button class="btn btn--ghost add-to-cart" type="button">Add to Cart</button>
             </div>
           </article>
 
-          <article class="menu-card reveal" data-id="beef-fried-rice" data-name="Beef Fried Rice" data-price="101.70" data-image="https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=900&q=80">
+          <article class="menu-card">
             <div class="menu-card__media">
-              <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=900&q=80" alt="Beef fried rice">
+              <img src="images/beef-fried-rice.jpg" alt="Beef Fried Rice">
+              <span class="tag">Filling meal</span>
             </div>
             <div class="menu-card__body">
               <div class="menu-card__top">
                 <h3>Beef Fried Rice</h3>
-                <strong>GH₵101.70</strong>
+                <strong>GH₵55</strong>
               </div>
-              <p>Hearty fried rice option for customers who want something filling but familiar.</p>
-              <div class="menu-card__meta">
-                <span><i class="fa-solid fa-bowl-rice"></i> Comfort meal</span>
-              </div>
-              <div class="menu-card__actions">
-                <button class="btn btn--primary btn--block js-cart-toggle" type="button">Add to Cart</button>
-              </div>
+              <p>Well-seasoned fried rice with beef, made for a filling and satisfying meal.</p>
+              <button class="btn btn--ghost add-to-cart" type="button">Add to Cart</button>
             </div>
           </article>
 
-          <article class="menu-card reveal" data-id="fresh-juice" data-name="Fresh Juice" data-price="50.90" data-image="https://images.unsplash.com/photo-1623065422902-30a2d299bbe4?auto=format&fit=crop&w=900&q=80">
+          <article class="menu-card">
             <div class="menu-card__media">
-              <img src="https://images.unsplash.com/photo-1623065422902-30a2d299bbe4?auto=format&fit=crop&w=900&q=80" alt="Fresh juice">
+              <img src="images/fresh-juice.jpg" alt="Fresh Juice">
+              <span class="tag">Refreshing</span>
             </div>
             <div class="menu-card__body">
               <div class="menu-card__top">
                 <h3>Fresh Juice</h3>
-                <strong>GH₵50.90</strong>
+                <strong>GH₵18</strong>
               </div>
-              <p>Bright, clean, and easy to upsell alongside pizza, shawarma, or burgers.</p>
-              <div class="menu-card__meta">
-                <span><i class="fa-solid fa-glass-water"></i> Easy add-on</span>
-              </div>
-              <div class="menu-card__actions">
-                <button class="btn btn--primary btn--block js-cart-toggle" type="button">Add to Cart</button>
-              </div>
+              <p>Fresh, refreshing juice made to pair perfectly with your meal.</p>
+              <button class="btn btn--ghost add-to-cart" type="button">Add to Cart</button>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="combos" aria-label="Combos">
+    <section class="section why-section" id="why-basilissa">
       <div class="container">
-        <div class="combo-panel reveal">
-          <div class="combo-panel__content">
-            <p class="eyebrow">
-              <i class="fa-solid fa-tags"></i>
-              Combos & offers
-            </p>
-            <h2>Make the deals feel exciting, not just listed.</h2>
-            <p>
-              This section is shaped to help customers decide faster — solo meals, bigger boxes,
-              and family-style ordering all presented in a cleaner, more restaurant-friendly way.
-            </p>
-
-            <div class="combo-points">
-              <div><i class="fa-solid fa-circle-check"></i> First-order promo energy</div>
-              <div><i class="fa-solid fa-circle-check"></i> Better bundle visibility</div>
-              <div><i class="fa-solid fa-circle-check"></i> Stronger mobile layout</div>
-            </div>
-
-            <button class="btn btn--primary js-open-cart" type="button">
-              <i class="fa-solid fa-bag-shopping"></i>
-              Order a Combo
-            </button>
-          </div>
-
-          <div class="combo-stack">
-            <article class="combo-card">
-              <span class="combo-card__icon"><i class="fa-solid fa-burger"></i></span>
-              <h3>Burger Combo</h3>
-              <p>Burger, fries, and a drink placed together the way customers expect to see it.</p>
-            </article>
-
-            <article class="combo-card">
-              <span class="combo-card__icon"><i class="fa-solid fa-user-group"></i></span>
-              <h3>Family Box</h3>
-              <p>Pizza, chicken, sides, and drinks bundled for faster group ordering decisions.</p>
-            </article>
-
-            <article class="combo-card">
-              <span class="combo-card__icon"><i class="fa-solid fa-motorcycle"></i></span>
-              <h3>Delivery Saver</h3>
-              <p>A smart section for app deals, pickup wins, and online-only offers.</p>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="story" aria-label="Why Basilissa">
-      <div class="container story-grid">
-        <div class="story-media reveal">
-          <div class="story-frame story-frame--main">
-            <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1200&q=80" alt="Fast food restaurant interior">
-          </div>
-          <div class="story-frame story-frame--small">
-            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80" alt="Plated meal">
-          </div>
-        </div>
-
-        <div class="story-content reveal">
-          <p class="eyebrow">
-            <i class="fa-solid fa-store"></i>
-            Why this works better
-          </p>
-          <h2>The page now reads like a restaurant brand, not a design presentation.</h2>
-          <p>
-            Instead of sounding like a pitch deck, the wording is now shaped around how customers actually browse:
-            what they want to eat, what feels popular, what looks worth ordering, and how quickly they can get to cart.
-          </p>
-
-          <div class="story-points">
-            <article>
-              <i class="fa-solid fa-mobile-screen-button"></i>
-              <div>
-                <h3>Mobile fills space better</h3>
-                <p>Cards sit in tighter two-column layouts on small screens so the page doesn’t feel too tall and empty.</p>
-              </div>
-            </article>
-
-            <article>
-              <i class="fa-solid fa-image"></i>
-              <div>
-                <h3>Stronger food presence</h3>
-                <p>More food visuals, stronger hero energy, and better category rhythm across the page.</p>
-              </div>
-            </article>
-
-            <article>
-              <i class="fa-solid fa-cart-shopping"></i>
-              <div>
-                <h3>Working cart behaviour</h3>
-                <p>Each product can be added or removed, the cart updates live, and the toggle text changes properly.</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="gallery" aria-label="Gallery">
-      <div class="container">
-        <header class="section-head section-head--split">
+        <div class="section-head section-head--split">
           <div>
-            <p class="eyebrow">
-              <i class="fa-solid fa-camera"></i>
-              Visual appetite
-            </p>
-            <h2>A food gallery that keeps the site feeling alive.</h2>
+            <p class="eyebrow">Why Choose Basilissa</p>
+            <h2>Good food, great service, and easy ordering</h2>
           </div>
+          <p>
+            At Basilissa, we serve meals made with care, great taste and quality ingredients.
+            Whether you are dining in, picking up or ordering for delivery,
+            we want every customer to enjoy fresh food and excellent service.
+          </p>
+        </div>
 
-          <button class="btn btn--ghost js-open-cart" type="button">
-            <i class="fa-solid fa-bag-shopping"></i>
-            Continue to Cart
-          </button>
-        </header>
+        <div class="why-grid">
+          <article class="why-card">
+            <i class="fa-solid fa-seedling"></i>
+            <h3>Quality ingredients</h3>
+            <p>We focus on tasty, satisfying meals prepared with attention to quality and freshness.</p>
+          </article>
+
+          <article class="why-card">
+            <i class="fa-solid fa-bolt"></i>
+            <h3>Fast service</h3>
+            <p>We know convenience matters, so we make ordering simple and service efficient.</p>
+          </article>
+
+          <article class="why-card">
+            <i class="fa-solid fa-heart"></i>
+            <h3>Meals people enjoy</h3>
+            <p>From quick bites to full meals, our menu is built around food customers love.</p>
+          </article>
+
+          <article class="why-card">
+            <i class="fa-solid fa-location-dot"></i>
+            <h3>Easy to reach</h3>
+            <p>Visit us in person, call ahead, or order on WhatsApp for a fast and smooth experience.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section combos-section" id="combos">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Meal Combos</p>
+          <h2>Great value, great taste</h2>
+          <p>
+            Choose from our combo meals for a satisfying mix of your favourites at a great price.
+          </p>
+        </div>
+
+        <div class="combo-grid">
+          <article class="combo-card">
+            <span class="badge">Popular</span>
+            <h3>Burger Combo</h3>
+            <p>Burger, fries, and a drink — a classic choice for a complete and satisfying meal.</p>
+            <strong>GH₵75</strong>
+          </article>
+
+          <article class="combo-card">
+            <span class="badge">Best Value</span>
+            <h3>Shawarma Combo</h3>
+            <p>Chicken shawarma served with fries and a drink for a quick and tasty meal.</p>
+            <strong>GH₵65</strong>
+          </article>
+
+          <article class="combo-card">
+            <span class="badge">Family Pick</span>
+            <h3>Pizza Combo</h3>
+            <p>A delicious pizza with drinks, perfect for sharing with friends or family.</p>
+            <strong>GH₵120</strong>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery-section" id="gallery">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Gallery</p>
+          <h2>A closer look at Basilissa</h2>
+          <p>
+            Take a look at some of our meals, our space and the experience that keeps customers coming back.
+          </p>
+        </div>
 
         <div class="gallery-grid">
-          <article class="gallery-card gallery-card--large reveal">
-            <img src="https://images.unsplash.com/photo-1514326640560-7d063ef2aed5?auto=format&fit=crop&w=1200&q=80" alt="Burger and fries spread">
-            <div class="gallery-card__overlay">
-              <span>Burgers</span>
-              <h3>Big flavour, styled simply.</h3>
+          <figure class="gallery-card">
+            <img src="images/gallery-1.jpg" alt="Pizza served at Basilissa">
+          </figure>
+          <figure class="gallery-card">
+            <img src="images/gallery-2.jpg" alt="Burger and fries served at Basilissa">
+          </figure>
+          <figure class="gallery-card">
+            <img src="images/gallery-3.jpg" alt="Fresh juice and meal at Basilissa">
+          </figure>
+          <figure class="gallery-card">
+            <img src="images/gallery-4.jpg" alt="Dining space at Basilissa">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reviews-section" id="reviews">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Customer Reviews</p>
+          <h2>What customers say about Basilissa</h2>
+          <p>Our customers come back for the taste, convenience, and warm service.</p>
+        </div>
+
+        <div class="reviews-grid">
+          <article class="testimonial-card">
+            <div class="testimonial-card__stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
             </div>
+            <p>“The food was fresh, tasty, and the service was fast. I’ll definitely order again.”</p>
+            <strong>— Customer Review</strong>
           </article>
 
-          <article class="gallery-card reveal">
-            <img src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=900&q=80" alt="Pizza close-up">
-            <div class="gallery-card__overlay">
-              <span>Pizza</span>
-              <h3>Cheese pull moments.</h3>
+          <article class="testimonial-card">
+            <div class="testimonial-card__stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
             </div>
+            <p>“Their shawarma and burgers are really good, and ordering was very easy.”</p>
+            <strong>— Customer Review</strong>
           </article>
 
-          <article class="gallery-card reveal">
-            <img src="https://images.unsplash.com/photo-1608039755401-742074f0548d?auto=format&fit=crop&w=900&q=80" alt="Fried chicken meal">
-            <div class="gallery-card__overlay">
-              <span>Chicken</span>
-              <h3>Crispy and golden.</h3>
+          <article class="testimonial-card">
+            <div class="testimonial-card__stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
             </div>
-          </article>
-
-          <article class="gallery-card reveal">
-            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=80" alt="Food on table">
-            <div class="gallery-card__overlay">
-              <span>Meals</span>
-              <h3>Everyday favourites.</h3>
-            </div>
-          </article>
-
-          <article class="gallery-card reveal">
-            <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=900&q=80" alt="Drinks">
-            <div class="gallery-card__overlay">
-              <span>Drinks</span>
-              <h3>Fresh add-ons that sell.</h3>
-            </div>
+            <p>“A great place for good food. The meals are satisfying and the service is friendly.”</p>
+            <strong>— Customer Review</strong>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="order" aria-label="Call to action">
+    <section class="section cta-section">
       <div class="container">
-        <div class="cta-panel reveal">
-          <div class="cta-panel__content">
-            <p class="eyebrow">
-              <i class="fa-solid fa-bag-shopping"></i>
-              Ready to order
-            </p>
-            <h2>Everything now points more clearly to the food.</h2>
-            <p>
-              Better wording, more appetite, cleaner sections, and a cart that actually works —
-              all while keeping your colour direction intact.
-            </p>
+        <div class="cta-card">
+          <div>
+            <p class="eyebrow">Order Today</p>
+            <h2>Order from Basilissa today</h2>
+            <p>Browse our menu and place your order for pickup or delivery. We’re ready to serve you.</p>
           </div>
 
-          <div class="cta-panel__actions">
-            <button class="btn btn--ghost js-open-cart" type="button">
-              <i class="fa-solid fa-bag-shopping"></i>
-              Open Cart
-            </button>
-            <a href="#menu" class="btn btn--primary">
+          <div class="cta-card__actions">
+            <a href="#menu" class="btn btn--ghost">
               <i class="fa-solid fa-book-open"></i>
-              Back to Menu
+              <span>View Menu</span>
+            </a>
+            <a href="https://wa.me/233000000000" class="btn btn--primary" target="_blank" rel="noopener">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>Order on WhatsApp</span>
             </a>
           </div>
         </div>
       </div>
     </section>
-  </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <div class="site-footer__grid">
-        <div class="footer-brand">
-          <div class="brand">
-            <div class="brand__badge">B</div>
-            <div class="brand__text">
-              <strong>Basilissa</strong>
-              <span>Family Restaurant</span>
-            </div>
-          </div>
+    <section class="section contact-section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-card">
+          <p class="eyebrow">Visit Basilissa</p>
+          <h2>We’d love to welcome you</h2>
           <p>
-            Pizza, burgers, shawarma, chicken, juices, and combo meals presented with a cleaner,
-            stronger fast-food restaurant identity.
+            Stop by for a meal, meet with friends, or place an order for pickup.
+            You can also contact us directly for delivery and enquiries.
           </p>
-          <div class="socials">
-            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
-            <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+
+          <div class="contact-list">
+            <div class="contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <strong>Location</strong>
+                <span>Accra, Ghana</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <strong>Phone</strong>
+                <span>+233 XX XXX XXXX</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fa-brands fa-whatsapp"></i>
+              <div>
+                <strong>WhatsApp</strong>
+                <span>+233 XX XXX XXXX</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fa-regular fa-clock"></i>
+              <div>
+                <strong>Opening Hours</strong>
+                <span>Daily: 9:00 AM – 10:00 PM</span>
+              </div>
+            </div>
           </div>
         </div>
 
+        <div class="contact-card">
+          <p class="eyebrow">Quick Contact</p>
+          <h2>Send us a message</h2>
+
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input id="name" type="text" placeholder="Your name">
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input id="phone" type="tel" placeholder="Your phone number">
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="5" placeholder="Tell us what you’d like to order or ask about"></textarea>
+            </div>
+
+            <button class="btn btn--primary btn--block" type="submit">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>Send Message</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container footer__grid">
+        <div class="footer__brand">
+          <a href="#home" class="brand">
+            <span class="brand__crest brand__crest--logo">
+              <span class="brand__crest-ring"></span>
+              <img src="logo.jpg" alt="Basilissa logo">
+            </span>
+            <span class="brand__text">
+              <strong>Basilissa</strong>
+              <small>Restaurant & Fast Food</small>
+            </span>
+          </a>
+
+          <p>
+            Basilissa serves freshly prepared meals, fast food favourites and refreshing drinks
+            in a welcoming setting. Visit us in person or place your order for pickup or delivery.
+          </p>
+        </div>
+
         <div>
-          <h3>Navigation</h3>
-          <ul class="footer-links">
-            <li><a href="#hero">Home</a></li>
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
             <li><a href="#menu">Menu</a></li>
-            <li><a href="#combos">Combos</a></li>
-            <li><a href="#story">Why Basilissa</a></li>
+            <li><a href="#why-basilissa">Why Basilissa</a></li>
             <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
 
         <div>
-          <h3>Menu Highlights</h3>
-          <ul class="footer-links">
+          <h3>Popular Meals</h3>
+          <ul>
             <li><a href="#menu">Pizza</a></li>
             <li><a href="#menu">Burgers</a></li>
             <li><a href="#menu">Shawarma</a></li>
-            <li><a href="#menu">Chicken</a></li>
+            <li><a href="#menu">Fried Rice</a></li>
             <li><a href="#menu">Fresh Juice</a></li>
           </ul>
         </div>
 
         <div>
-          <h3>Service</h3>
-          <ul class="footer-links footer-links--contact">
-            <li><i class="fa-solid fa-mobile-screen-button"></i> Online ordering</li>
-            <li><i class="fa-solid fa-motorcycle"></i> Delivery ready</li>
-            <li><i class="fa-solid fa-tags"></i> Combo promotions</li>
-            <li><i class="fa-solid fa-gift"></i> First-order offers</li>
+          <h3>Contact Us</h3>
+          <ul>
+            <li>Accra, Ghana</li>
+            <li>+233 XX XXX XXXX</li>
+            <li>+233 XX XXX XXXX</li>
+            <li>Daily: 9:00 AM – 10:00 PM</li>
           </ul>
         </div>
       </div>
 
-      <div class="site-footer__bottom">
+      <div class="container footer__bottom">
         <p>© 2026 Basilissa. All rights reserved.</p>
-        <div class="site-footer__bottom-links">
-          <a href="#">Privacy</a>
-          <a href="#">Terms</a>
-          <a href="#">Cookies</a>
+      </div>
+    </footer>
+
+    <aside class="cart-drawer" aria-hidden="true">
+      <div class="cart-drawer__header">
+        <h2>Your Cart</h2>
+        <button class="icon-btn" type="button" aria-label="Close cart" data-cart-close>
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="cart-drawer__body">
+        <p class="cart-empty">Your cart is empty.</p>
+      </div>
+
+      <div class="cart-drawer__footer">
+        <div class="cart-total">
+          <span>Total</span>
+          <strong>GH₵0.00</strong>
         </div>
-      </div>
-    </div>
-  </footer>
 
-  <aside class="cart-drawer" aria-hidden="true">
-    <div class="cart-drawer__head">
-      <h2><i class="fa-solid fa-bag-shopping"></i> Your Cart</h2>
-      <button class="icon-btn js-close-cart" type="button" aria-label="Close cart">
-        <i class="fa-solid fa-xmark"></i>
-      </button>
-    </div>
-
-    <div class="cart-drawer__body js-cart-body">
-      <div class="cart-empty">
-        <i class="fa-solid fa-bag-shopping"></i>
-        <p>Your cart is empty.</p>
+        <a href="https://wa.me/233000000000" class="btn btn--primary btn--block" target="_blank" rel="noopener">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>Checkout on WhatsApp</span>
+        </a>
       </div>
-    </div>
+    </aside>
 
-    <div class="cart-drawer__foot">
-      <div class="cart-total">
-        <span>Total</span>
-        <strong class="js-cart-total">GH₵0</strong>
-      </div>
-      <button class="btn btn--primary btn--block" type="button">
-        <i class="fa-solid fa-credit-card"></i>
-        Proceed to Checkout
-      </button>
-    </div>
-  </aside>
+    <div class="site-overlay" aria-hidden="true"></div>
+  </div>
+</body>
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {
@@ -2779,5 +2798,4 @@
       renderCart();
     });
   </script>
-</body>
 </html>
